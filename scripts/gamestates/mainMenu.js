@@ -1,49 +1,51 @@
 let menuState = {
 
     create: function() {
-/*
+
         // add sprites
-        let background = game.add.sprite(0, 0, 'mainMenuBackground');
+        let background = game.add.sprite(0, 0, 'mainMenuBg');
         background.height = this.game.height;
         background.width = this.game.width;
 
-        let startButton = game.add.button(0.167*this.game.width,0.195*this.game.height,'mainMenuButton',this.gameStart,this,1,2,0);
-        let gameDetailsButton = game.add.button(0.167*this.game.width,0.3888*this.game.height,'mainMenuButton',this.showCredits,this,1,2,0);
+        let startButton = game.add.button(320,290,'mainMenuButton',this.gameStart,this,1,2,0);
+        let creditsButton = game.add.button(320,390,'mainMenuButton',this.showCredits,this,1,2,0);
 
-        startButton.width = 0.2265625*this.game.width;
-        startButton.height = 0.1018519*this.game.height;
-        gameDetailsButton.width = 0.2265625*this.game.width;
-        gameDetailsButton.height = 0.1018519*this.game.height;
-*/
-        game.add.text(
-            5,
-            5,
-            'Play game', {
+        startButton.width = 160;
+        startButton.height = 50;
+        creditsButton.width = 160;
+        creditsButton.height = 50;
+
+
+        game.add.text(0,0,
+            'Play game',
+            {
                 font: "Arial",
-                fontSize:settings.interfaceSize,
+                fontSize: settings.interfaceSize,
                 fill: "#ffffff",
                 stroke: settings.interfaceStroke,
                 strokeThickness: settings.interfaceStrokeThickness,
                 align: 'center',
+                boundsAlignH: "center",
+                boundsAlignV: "center"
             })
-            .setTextBounds(0,0,0,0);
+            .setTextBounds(0, 300,800,600);
 
-        game.add.text(
-            5,
-            5,
-            'Credits', {
+        game.add.text(0,0,
+            'Credits',
+            {
                 font: "Arial",
-                fontSize:settings.interfaceSize,
+                fontSize: settings.interfaceSize,
                 fill: "#ffffff",
                 stroke: settings.interfaceStroke,
                 strokeThickness: settings.interfaceStrokeThickness,
                 align: 'center',
+                boundsAlignH: "center",
+                boundsAlignV: "center"
             })
-            .setTextBounds(0,0,0,0);
+            .setTextBounds(0,400,800,600);
     },
 
     gameStart:function(){
-
         return false;
        // game.state.start('pickDifficulty');
     },

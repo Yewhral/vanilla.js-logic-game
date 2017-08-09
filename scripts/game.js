@@ -5,6 +5,8 @@ let game = new Phaser.Game(
     'settings.parent'
 );
 
+game.state.add('load', loadState);
 game.state.add('mainMenu', menuState);
 
-game.state.start('mainMenu');
+
+game.state.start('load');
