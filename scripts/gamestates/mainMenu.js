@@ -23,8 +23,8 @@ let menuState = {
     },
 
     gameStart:function(){
-        return false;
-       // game.state.start('pickDifficulty');
+       // return false;
+        game.state.start('pickLevel');
     },
 
     showCredits:function(){
