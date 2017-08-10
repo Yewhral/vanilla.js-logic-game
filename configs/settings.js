@@ -20,6 +20,15 @@ let settings = {
                 boundsAlignV: "center"
             })
             .setTextBounds(X0, Y0, this.width,this.height);
+    },
+    // game mechanics settings
+    snapToGrid: function(element){
+        const bounds = new Phaser.Rectangle(0, 0, 800, 600);
+        element.inputEnabled = true;
+        element.input.enableDrag();
+        element.input.enableSnap(20, 20, false, true);
+        element.input.boundsRect = bounds;
     }
+
 };
 
