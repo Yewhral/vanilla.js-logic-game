@@ -7,6 +7,7 @@ let menuState = {
         background.height = this.game.height;
         background.width = this.game.width;
 
+
         let startButton = game.add.button(320,290,'mainMenuButton',this.gameStart,this,1,2,0);
         let creditsButton = game.add.button(320,390,'mainMenuButton',this.showCredits,this,1,2,0);
 
@@ -15,34 +16,10 @@ let menuState = {
         creditsButton.width = 160;
         creditsButton.height = 50;
 
+        settings.createText('The Constructor', 60, 5, 0, 150);
+        settings.createText('Play game', 20, 3, 0, 300);
+        settings.createText('Credits', 20, 3, 0, 400);
 
-        game.add.text(0,0,
-            'Play game',
-            {
-                font: "Arial",
-                fontSize: settings.interfaceSize,
-                fill: "#ffffff",
-                stroke: settings.interfaceStroke,
-                strokeThickness: settings.interfaceStrokeThickness,
-                align: 'center',
-                boundsAlignH: "center",
-                boundsAlignV: "center"
-            })
-            .setTextBounds(0, 300,800,600);
-
-        game.add.text(0,0,
-            'Credits',
-            {
-                font: "Arial",
-                fontSize: settings.interfaceSize,
-                fill: "#ffffff",
-                stroke: settings.interfaceStroke,
-                strokeThickness: settings.interfaceStrokeThickness,
-                align: 'center',
-                boundsAlignH: "center",
-                boundsAlignV: "center"
-            })
-            .setTextBounds(0,400,800,600);
     },
 
     gameStart:function(){
