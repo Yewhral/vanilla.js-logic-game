@@ -28,6 +28,9 @@ let settings = {
         element.input.enableDrag();
         element.input.enableSnap(20, 20, false, true);
         element.input.boundsRect = bounds;
+    },
+    randomizeInitial: function(min, max){
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
 };
