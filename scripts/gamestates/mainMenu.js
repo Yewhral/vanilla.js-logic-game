@@ -23,7 +23,6 @@ let menuState = {
     },
 
     gameStart:function(){
-       // return false;
         game.state.start('pickLevel');
     },
 

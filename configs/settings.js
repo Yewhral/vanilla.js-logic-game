@@ -20,7 +20,6 @@ let settings = {
                 boundsAlignV: "center"
             })
             .setTextBounds(X0, Y0, this.width,this.height);
-
     }
 };
 

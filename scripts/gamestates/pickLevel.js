@@ -30,8 +30,7 @@ let levelState = {
     },
 
     tutorialStart: function() {
-        // game.state.start('tutorial');
-        return false;
+        game.state.start('tutorial');
     }
 
 
