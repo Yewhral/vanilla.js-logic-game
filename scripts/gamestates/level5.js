@@ -8,7 +8,7 @@ let level5State = {
 
 
         //Adding texts
-        settings.createText('Level 5 - ', 30, 5, 0, 100);
+        mechanics.createText('Level 5 - ', 30, 5, 0, 100);
 
     },
 

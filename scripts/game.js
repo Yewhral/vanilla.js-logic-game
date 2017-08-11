@@ -1,8 +1,8 @@
 let game = new Phaser.Game(
-    settings.width,
-    settings.height,
-    settings.renderer,
-    'settings.parent'
+    mechanics.width,
+    mechanics.height,
+    mechanics.renderer,
+    'mechanics.parent'
 );
 
 game.state.add('load', loadState);

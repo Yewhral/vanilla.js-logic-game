@@ -8,20 +8,19 @@ let tutorialState = {
 
         const tutorial = game.add.sprite(340, 220, 'tutorial');
 
-        const block1 = game.add.sprite(settings.randomizeInitial(500,700), settings.randomizeInitial(200,300), 'block1');
-        settings.snapToGrid(block1);
-        const block2 = game.add.sprite(settings.randomizeInitial(10,200), settings.randomizeInitial(200,300), 'block2');
-        settings.snapToGrid(block2);
-        const block3 = game.add.sprite(settings.randomizeInitial(10,300), settings.randomizeInitial(350,450), 'block3');
-        settings.snapToGrid(block3);
+        const block1 = game.add.sprite(mechanics.randomizeInitial(500,700), mechanics.randomizeInitial(200,300), 'block1');
+        mechanics.snapToGrid(block1);
+        const block2 = game.add.sprite(mechanics.randomizeInitial(10,200), mechanics.randomizeInitial(200,300), 'block2');
+        mechanics.snapToGrid(block2);
+        const block3 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block3');
+        mechanics.snapToGrid(block3);
 
         //Adding texts
-        settings.createText('Drag the elements to fit the square!', 30, 5, 0, 100);
+        mechanics.createText('Drag the elements to fit the square!', 30, 5, 0, 100);
 
         //Adding events
-        block1.events.onDragStop.add(tutorialState.checkPosition,{block1:block1,block2:block2,block3:block3});
-        block2.events.onDragStop.add(tutorialState.checkPosition,{block1:block1,block2:block2,block3:block3});
-        block3.events.onDragStop.add(tutorialState.checkPosition,{block1:block1,block2:block2,block3:block3});
+        const blocksArray = [block1, block2, block3];
+        mechanics.assignDrags(blocksArray, tutorialState.checkPosition);
     },
 
     checkPosition: function() {
@@ -34,7 +33,7 @@ let tutorialState = {
 
     displayScoreboard: function(){
         console.log('YOU WIN!!!');
-        settings.createText('The faster you are the better your score!', 20, 5, 0, 450);
+        mechanics.createText('The faster you are the better your score!', 20, 5, 0, 450);
     },
 
     measureTime: function() {

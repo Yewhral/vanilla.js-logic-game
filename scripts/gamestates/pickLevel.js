@@ -10,8 +10,8 @@ let levelState = {
         tutorialButton.width = 160;
         tutorialButton.height = 50;
 
-        settings.createText('Pick a level', 30, 4, 0, 150);
-        settings.createText('Tutorial', 20, 3, 0, 230);
+        mechanics.createText('Pick a level', 30, 4, 0, 150);
+        mechanics.createText('Tutorial', 20, 3, 0, 230);
 
         this.generateLvlButtons(3, 310, 1);
         this.generateLvlButtons(3, 400, 4);
@@ -20,7 +20,7 @@ let levelState = {
     generateLvlButtons: function (amount, positionY, rowFactor) {
         for(let i = 0; i < amount ; i++) {
             const but = game.add.button( 140 + i * 180, positionY, 'mainMenuButton', 0, this, 1, 2, 0);
-            settings.createText(`Level ${i+rowFactor}`, 20, 3, -185 + i * 180, positionY + 10);
+            mechanics.createText(`Level ${i+rowFactor}`, 20, 3, -185 + i * 180, positionY + 10);
             but.events.onInputUp.add(levelState.levelStart, { param1:i+rowFactor });
         }
     },

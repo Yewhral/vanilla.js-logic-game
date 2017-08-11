@@ -16,9 +16,9 @@ let menuState = {
         creditsButton.width = 160;
         creditsButton.height = 50;
 
-        settings.createText('The Constructor', 60, 5, 0, 150);
-        settings.createText('Play game', 20, 3, 0, 300);
-        settings.createText('Credits', 20, 3, 0, 400);
+        mechanics.createText('The Constructor', 60, 5, 0, 150);
+        mechanics.createText('Play game', 20, 3, 0, 300);
+        mechanics.createText('Credits', 20, 3, 0, 400);
 
     },
 
