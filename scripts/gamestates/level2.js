@@ -6,6 +6,8 @@ let level2State = {
         background.height = this.game.height;
         background.width = this.game.width;
 
+        //creating UI
+        mechanics.createInterface();
 
         //Adding texts
         mechanics.createText('Level 2 - ', 30, 5, 0, 100);

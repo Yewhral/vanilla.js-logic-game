@@ -1,16 +1,20 @@
 let level1State = {
 
     create: function() {
+
         //Adding sprites
         const background = game.add.sprite(0, 0, 'mainMenuBg');
         background.height = this.game.height;
         background.width = this.game.width;
 
-        const levelOne = game.add.sprite(300, 220, 'levelOne');
+        //creating UI
+        mechanics.createInterface();
 
         //Adding texts
         mechanics.createText('Level 1 - Rocket science ', 30, 5, 0, 100);
 
+        //creating items
+        const levelOne = game.add.sprite(300, 220, 'levelOne');
 
         const block1 = game.add.sprite(mechanics.randomizeInitial(500,700), mechanics.randomizeInitial(200,300), 'block4');
         mechanics.snapToGrid(block1);
@@ -33,8 +37,7 @@ let level1State = {
             this.block2.position.x === 380 && this.block2.position.y === 220 &&
             this.block3.position.x === 340 && this.block3.position.y === 260 &&
             this.block4.position.x === 300 && this.block4.position.y === 340) {
-            console.log('YOU WIN!');
-
+            mechanics.showEndgameInterface();
         }
     }
 };

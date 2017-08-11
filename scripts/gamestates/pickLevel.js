@@ -26,10 +26,12 @@ let levelState = {
     },
 
     levelStart: function() {
+        mechanics.counter = this.param1 ;
         game.state.start(`level-${ this.param1 }`);
     },
 
     tutorialStart: function() {
+        mechanics.counter = 0 ;
         game.state.start('tutorial');
     }
 
