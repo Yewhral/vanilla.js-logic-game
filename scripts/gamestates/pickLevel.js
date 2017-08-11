@@ -17,16 +17,17 @@ let levelState = {
         this.generateLvlButtons(3, 400, 4);
     },
 
-    generateLvlButtons: function (amount, y, row) {
+    generateLvlButtons: function (amount, positionY, rowFactor) {
         for(let i = 0; i < amount ; i++) {
-            game.add.button(140+i*180, y, 'mainMenuButton', this.levelStart, this, 1, 2, 0);        //TODO bind adequate function to each button - find out how to pass arguments here
-            settings.createText(`Level ${i+row}`, 20, 3, -185+i*180, y+10);
+            const but = game.add.button( 140 + i * 180, positionY, 'mainMenuButton', 0, this, 1, 2, 0);
+            settings.createText(`Level ${i+rowFactor}`, 20, 3, -185 + i * 180, positionY + 10);
+            but.events.onInputUp.add(levelState.levelStart, { param1:i+rowFactor });
         }
     },
 
     levelStart: function() {
-        return false;
-        // game.state.start(`level+${i}`);
+        console.log(this.param1);
+        game.state.start(`level${ this.param1 }`);
     },
 
     tutorialStart: function() {
