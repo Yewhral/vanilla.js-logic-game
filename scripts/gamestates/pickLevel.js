@@ -32,7 +32,7 @@ let levelState = {
 
     tutorialStart: function() {
         mechanics.counter = 0 ;
-        game.state.start('tutorial');
+        game.state.start('level-0');
     }
 
 };

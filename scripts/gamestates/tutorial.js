@@ -1,4 +1,4 @@
-let tutorialState = {
+let level0State = {
 
     create: function() {
 
@@ -27,14 +27,14 @@ let tutorialState = {
 
         //Adding events
         const blocksArray = [block1, block2, block3];
-        mechanics.assignDrags(blocksArray, tutorialState.checkPosition);
+        mechanics.assignDrags(blocksArray, level0State.checkPosition);
     },
 
     checkPosition: function() {
         if(this.block1.position.x === 340 && this.block1.position.y === 220 &&
            this.block2.position.x === 380 && this.block2.position.y === 220 &&
            this.block3.position.x === 380 && this.block3.position.y === 260) {
-           tutorialState.displayScoreboard();
+           level0State.displayScoreboard();
         }
     },
 

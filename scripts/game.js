@@ -8,7 +8,7 @@ let game = new Phaser.Game(
 game.state.add('load', loadState);
 game.state.add('mainMenu', menuState);
 game.state.add('pickLevel', levelState);
-game.state.add('tutorial', tutorialState);
+game.state.add('level-0', level0State);
 game.state.add('level-1', level1State);
 game.state.add('level-2', level2State);
 game.state.add('level-3', level3State);
