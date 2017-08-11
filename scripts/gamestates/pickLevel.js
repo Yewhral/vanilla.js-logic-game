@@ -26,15 +26,11 @@ let levelState = {
     },
 
     levelStart: function() {
-        console.log(this.param1);
-        game.state.start(`level${ this.param1 }`);
+        game.state.start(`level-${ this.param1 }`);
     },
 
     tutorialStart: function() {
         game.state.start('tutorial');
     }
-
-
-
 
 };
