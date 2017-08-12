@@ -15,22 +15,22 @@ let level3State = {
 
         const levelThree = game.add.sprite(260, 220, 'levelThree');
 
-        const block1 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block4');
+        const block1 = game.add.sprite(mechanics.randomizeInitial(10,100), mechanics.randomizeInitial(200,280), 'block4');
         mechanics.snapToGrid(block1);
 
-        const block2 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block5');
+        const block2 = game.add.sprite(mechanics.randomizeInitial(550,660), mechanics.randomizeInitial(280,310), 'block5');
         mechanics.snapToGrid(block2);
 
-        const block3 = game.add.sprite(mechanics.randomizeInitial(500,700), mechanics.randomizeInitial(200,300), 'block14');
+        const block3 = game.add.sprite(mechanics.randomizeInitial(500,680), mechanics.randomizeInitial(80,160), 'block14');
         mechanics.snapToGrid(block3);
 
-        const block4 = game.add.sprite(mechanics.randomizeInitial(10,200), mechanics.randomizeInitial(200,300), 'block17');
+        const block4 = game.add.sprite(mechanics.randomizeInitial(10,50), mechanics.randomizeInitial(100,150), 'block17');
         mechanics.snapToGrid(block4);
 
-        const block5 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block18');
+        const block5 = game.add.sprite(mechanics.randomizeInitial(550,660), mechanics.randomizeInitial(425,440), 'block18');
         mechanics.snapToGrid(block5);
 
-        const block6 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block19');
+        const block6 = game.add.sprite(mechanics.randomizeInitial(10,100), mechanics.randomizeInitial(350,450), 'block19');
         mechanics.snapToGrid(block6);
 
         const blocksArray = [block1, block2, block3, block4, block5, block6];
