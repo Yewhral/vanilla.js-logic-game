@@ -8,6 +8,8 @@ let loadState = {
         game.load.image('tutorial', 'images/sprites/tutorial.png');
         game.load.image('levelOne', 'images/sprites/levelOne.png');
         game.load.image('levelTwo', 'images/sprites/levelTwo.png');
+        game.load.image('levelThree', 'images/sprites/levelThree.png');
+        game.load.image('levelFour', 'images/sprites/levelFour.png');
         game.load.image('levelFive', 'images/sprites/levelFive.png');
         game.load.image('block1', 'images/sprites/T1.png');
         game.load.image('block2', 'images/sprites/T2.png');
@@ -25,6 +27,10 @@ let loadState = {
         game.load.image('block14', 'images/sprites/T14.png');
         game.load.image('block15', 'images/sprites/T15.png');
         game.load.image('block16', 'images/sprites/T16.png');
+        game.load.image('block17', 'images/sprites/T17.png');
+        game.load.image('block18', 'images/sprites/T18.png');
+        game.load.image('block19', 'images/sprites/T19.png');
+        game.load.image('block20', 'images/sprites/T20.png');
 
         game.load.spritesheet('mainMenuButton', 'images/sprites/menuButtons.png', 150, 50);
 
