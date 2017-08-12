@@ -31,6 +31,7 @@ let loadState = {
         game.load.image('block18', 'images/sprites/T18.png');
         game.load.image('block19', 'images/sprites/T19.png');
         game.load.image('block20', 'images/sprites/T20.png');
+        game.load.image('block21', 'images/sprites/T21.png');
 
         game.load.spritesheet('mainMenuButton', 'images/sprites/menuButtons.png', 150, 50);
 

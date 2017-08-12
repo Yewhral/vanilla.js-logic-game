@@ -15,6 +15,9 @@ Update: 16:00 - Added level one (requires fixes), heavily refactored most of the
 Update: 19:00 - Added "go back to menu button", refactored some mechanics
 Update: 20:00 - Added more interface, fixed bug with counter
 
+Day4 - Saturday 13:00 - Plan for today: finish all levels, add timer finally
+
+
 // sites and resources used so far:
 
  https://tinypng.com/
