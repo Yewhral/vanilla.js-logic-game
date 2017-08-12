@@ -27,8 +27,7 @@ let menuState = {
     },
 
     showCredits:function(){
-        return false;
-       // game.state.start('credits');
+        game.state.start('credits');
     },
 
 

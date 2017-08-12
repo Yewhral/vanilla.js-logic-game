@@ -82,6 +82,10 @@ let mechanics = {
 
     restartLevel: function(){
         game.state.start(`level-${mechanics.counter}`);
+    },
+
+    measureTime: function(){
+
     }
 
 };

@@ -17,6 +17,8 @@ Update: 20:00 - Added more interface, fixed bug with counter
 
 Day4 - Saturday 13:00 - Plan for today: finish all levels, add timer finally
 
+Update: 18:30 - more levels, credits
+
 
 // sites and resources used so far:
 

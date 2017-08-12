@@ -39,13 +39,9 @@ let level0State = {
     },
 
     displayScoreboard: function(){
-        console.log('YOU WIN!!!');
         mechanics.createText('The faster you are the better your score!', 20, 5, 0, 450);
         mechanics.showEndgameInterface();
     },
 
-    measureTime: function() {
-
-    }
 
 };

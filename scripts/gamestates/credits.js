@@ -1,4 +1,4 @@
-let level6State = {
+let creditsState = {
 
     create: function() {
         //Adding sprites
@@ -10,7 +10,7 @@ let level6State = {
         mechanics.createInterface();
 
         //Adding texts
-        mechanics.createText('Level 6 - ', 30, 5, 0, 100);
+        mechanics.createText('Game made by Michał Zabrzyjewski ', 30, 5, 0, 100);
 
     },
 
