@@ -16,16 +16,16 @@ let level1State = {
         //creating items
         const levelOne = game.add.sprite(300, 220, 'levelOne');
 
-        const block1 = game.add.sprite(mechanics.randomizeInitial(500,700), mechanics.randomizeInitial(200,300), 'block4');
+        const block1 = game.add.sprite(mechanics.randomizeInitial(500,600), mechanics.randomizeInitial(150,250), 'block4');
         mechanics.snapToGrid(block1);
 
-        const block2 = game.add.sprite(mechanics.randomizeInitial(10,200), mechanics.randomizeInitial(200,300), 'block5');
+        const block2 = game.add.sprite(mechanics.randomizeInitial(10,150), mechanics.randomizeInitial(100,250), 'block5');
         mechanics.snapToGrid(block2);
 
-        const block3 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block6');
+        const block3 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(400,450), 'block6');
         mechanics.snapToGrid(block3);
 
-        const block4 = game.add.sprite(mechanics.randomizeInitial(10,300), mechanics.randomizeInitial(350,450), 'block3');
+        const block4 = game.add.sprite(mechanics.randomizeInitial(500,650), mechanics.randomizeInitial(400,450), 'block3');
         mechanics.snapToGrid(block4);
 
         const blocksArray = [block1, block2, block3, block4];
