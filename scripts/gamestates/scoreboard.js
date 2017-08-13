@@ -21,18 +21,20 @@ let scoreState = {
         //Adding texts
         mechanics.createText('Your best times:', 30, 5, 0, 100);
 
-        mechanics.createText(`Tutorial: ${localStorage.getItem('level-1')}`, 20, 5, 0, 200);
+        if(localStorage.getItem(`level-0`) !== null) {
+            mechanics.createText(`Tutorial: ${localStorage.getItem(`level-0`)} s`, 20, 5, 0, 200);
+        } else {
+            mechanics.createText(`Tutorial: ---`, 20, 5, 0, 200);
+        }
 
         scoreState.createScoreboard();
-
-
 
     },
 
     createScoreboard: function(){
         for(let i = 1; i <= 6; i++) {
             if(localStorage.getItem(`level-${i}`) !== null){
-                mechanics.createText(`Level ${i}: ${localStorage.getItem(`level-${i}`)}`, 20, 5, 0, 200 + (40 * i));
+                mechanics.createText(`Level ${i}: ${localStorage.getItem(`level-${i}`)} s`, 20, 5, 0, 200 + (40 * i));
             } else {
                 mechanics.createText(`Level ${i}: ---`, 20, 5, 0, 200 + (40 * i));
             }

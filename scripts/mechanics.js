@@ -82,6 +82,7 @@ let mechanics = {
         game.add.button(325,540,'mainMenuButton',mechanics.takeToTheNextLevel,this,1,2,0);
         mechanics.createText('Next level', 20, 3, 0, 550);
         mechanics.createText(`Your time: ${time} s`, 20, 3, 300, 550);
+        mechanics.updateRecordTime(time);
     },
 
     takeToTheNextLevel: function(){
@@ -98,7 +99,14 @@ let mechanics = {
     restartLevel: function() {
         game.state.start(`level-${mechanics.counter}`);
         mechanics.resetTimer();
-    }
+    },
+
+    updateRecordTime: function(levelTime) {
+        if (localStorage.getItem(`level-${mechanics.counter}`) > levelTime ||
+            localStorage.getItem(`level-${mechanics.counter}`) === null) {
+            localStorage.setItem(`level-${mechanics.counter}`, levelTime);
+        }
+    },
 
 };
 

@@ -32,3 +32,5 @@ Day5 - Sunday 9:00 - Plan for today: add scoreboard based on localStorage.
  https://github.com/photonstorm/phaser-examples/blob/master/examples/input/drag%20event%20parameters.js
 
  http://www.html5gamedevs.com/topic/5351-call-a-function-with-arguments-when-oninputdown/
+
+ https://stackoverflow.com/questions/16010827/html5-localstorage-checking-if-a-key-exists
