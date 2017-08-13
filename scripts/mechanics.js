@@ -106,7 +106,7 @@ let mechanics = {
             localStorage.getItem(`level-${mechanics.counter}`) === null) {
             localStorage.setItem(`level-${mechanics.counter}`, levelTime);
         }
-    },
+    }
 
 };
 
