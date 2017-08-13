@@ -11,7 +11,7 @@ let level4State = {
 
         //Adding texts
         mechanics.createText('Level 4 - Backbone', 30, 5, 0, 100);
-        const levelFour = game.add.sprite(220, 220, 'levelFour');
+        const levelFour = game.add.sprite(240, 240, 'levelFour');
 
         const block1 = game.add.sprite(mechanics.randomizeInitial(220,260), mechanics.randomizeInitial(410,440), 'block3');
         mechanics.snapToGrid(block1);
@@ -39,13 +39,13 @@ let level4State = {
     },
 
         checkPosition: function() {
-            if(this.block1.position.x === 420 && this.block1.position.y === 300 &&
-                this.block2.position.x === 340 && this.block2.position.y === 260 &&
-                this.block3.position.x === 260 && this.block3.position.y === 300 &&
-                this.block4.position.x === 220 && this.block4.position.y === 260 &&
-                this.block5.position.x === 500 && this.block5.position.y === 260 &&
-                this.block6.position.x === 260 && this.block6.position.y === 220 &&
-                this.block7.position.x === 460 && this.block7.position.y === 220) {
+            if(this.block1.position.x === 440 && this.block1.position.y === 320 &&
+                this.block2.position.x === 360 && this.block2.position.y === 280 &&
+                this.block3.position.x === 280 && this.block3.position.y === 320 &&
+                this.block4.position.x === 240 && this.block4.position.y === 280 &&
+                this.block5.position.x === 520 && this.block5.position.y === 280 &&
+                this.block6.position.x === 280 && this.block6.position.y === 240 &&
+                this.block7.position.x === 480 && this.block7.position.y === 240) {
                 mechanics.showEndgameInterface();
             }
 

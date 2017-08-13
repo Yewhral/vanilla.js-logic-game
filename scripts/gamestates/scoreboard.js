@@ -9,7 +9,7 @@ let scoreState = {
         //creating UI
         let btnWidth = 120;
         let btnHeight = 40;
-        let button = game.add.button(10,15,'mainMenuButton', function(){
+        let button = game.add.button(20,15,'mainMenuButton', function(){
             mechanics.counter = 0;
             game.state.start('mainMenu');
         },this,1,2,0);
@@ -17,7 +17,7 @@ let scoreState = {
         button.width = btnWidth;
         button.alpha = 0.6;
         mechanics.createText('Main menu', 14, 1, -330, 25);
-        let but = game.add.button(140,15,'mainMenuButton', function(){
+        let but = game.add.button(150,15,'mainMenuButton', function(){
             scoreState.resetScores();
             game.state.start('scoreboard');
         },this,1,2,0);

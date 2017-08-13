@@ -4,7 +4,7 @@ let mechanics = {
     timer: 0, //
 
     //game settings
-    width: 800,                //game width
+    width: 820,                //game width
     height: 600,                //game height
     renderer: Phaser.CANVAS,
     parent: 'phaser-example',
@@ -36,14 +36,14 @@ let mechanics = {
     createInterface: function() {
         let btnWidth = 120;
         let btnHeight = 40;
-        let button = game.add.button(10,15,'mainMenuButton', function(){
+        let button = game.add.button(20,15,'mainMenuButton', function(){
             mechanics.counter = 0;
             game.state.start('mainMenu');
         },this,1,2,0);
         button.height = btnHeight;
         button.width = btnWidth;
         button.alpha = 0.6;
-        button = game.add.button(140,15,'mainMenuButton', mechanics.restartLevel,this,1,2,0);
+        button = game.add.button(150,15,'mainMenuButton', mechanics.restartLevel,this,1,2,0);
         button.height = btnHeight;
         button.width = btnWidth;
         button.alpha = 0.7;
@@ -70,17 +70,17 @@ let mechanics = {
     },
 
     snapToGrid: function(element){
-        const bounds = new Phaser.Rectangle(0, 0, 800, 600);
+        const bounds = new Phaser.Rectangle(0, 0, 820, 600);
         element.inputEnabled = true;
         element.input.enableDrag();
-        element.input.enableSnap(20, 20, false, true);
+        element.input.enableSnap(40, 40, false, true);
         element.input.boundsRect = bounds;
     },
 
     showEndgameInterface: function(){
         let time = mechanics.measureTime();
-        game.add.button(325,540,'mainMenuButton',mechanics.takeToTheNextLevel,this,1,2,0);
-        mechanics.createText('Next level', 20, 3, 0, 550);
+        game.add.button(340,540,'mainMenuButton',mechanics.takeToTheNextLevel,this,1,2,0);
+        mechanics.createText('Next level', 20, 3, 5, 550);
         mechanics.createText(`Your time: ${time} s`, 20, 3, 300, 550);
         mechanics.updateRecordTime(time);
     },

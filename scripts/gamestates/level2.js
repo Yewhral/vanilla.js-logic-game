@@ -12,7 +12,7 @@ let level2State = {
         //Adding texts
         mechanics.createText('Level 2 - HTML Root', 30, 5, 0, 100);
 
-        const levelTwo = game.add.sprite(300, 220, 'levelTwo');
+        const levelTwo = game.add.sprite(280, 200, 'levelTwo');
 
         const block1 = game.add.sprite(mechanics.randomizeInitial(10,210), mechanics.randomizeInitial(290,320), 'block9');
         mechanics.snapToGrid(block1);
@@ -34,11 +34,11 @@ let level2State = {
     },
 
     checkPosition: function() {
-            if(this.block1.position.x === 380 && this.block1.position.y === 220 &&
-                this.block2.position.x === 460 && this.block2.position.y === 340 &&
-                this.block3.position.x === 300 && this.block3.position.y === 300 &&
-                this.block4.position.x === 380 && this.block4.position.y === 260 &&
-                this.block5.position.x === 420 && this.block5.position.y === 420) {
+            if(this.block1.position.x === 360 && this.block1.position.y === 200 &&
+                this.block2.position.x === 440 && this.block2.position.y === 320 &&
+                this.block3.position.x === 280 && this.block3.position.y === 280 &&
+                this.block4.position.x === 360 && this.block4.position.y === 240 &&
+                this.block5.position.x === 400 && this.block5.position.y === 400) {
                 mechanics.showEndgameInterface();
             }
     },

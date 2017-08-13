@@ -9,7 +9,7 @@ let creditsState = {
         //creating UI
         let btnWidth = 120;
         let btnHeight = 40;
-        let button = game.add.button(10,15,'mainMenuButton', function(){
+        let button = game.add.button(20,15,'mainMenuButton', function(){
             mechanics.counter = 0;
             game.state.start('mainMenu');
         },this,1,2,0);

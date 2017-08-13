@@ -12,7 +12,7 @@ let level5State = {
         //Adding texts
         mechanics.createText('Level 5 - CoffeeScript', 30, 5, 0, 100);
 
-        const levelFive = game.add.sprite(300, 220, 'levelFive');
+        const levelFive = game.add.sprite(280, 200, 'levelFive');
 
         const block1 = game.add.sprite(mechanics.randomizeInitial(10,200), mechanics.randomizeInitial(380,400), 'block7');
         mechanics.snapToGrid(block1);
@@ -43,14 +43,14 @@ let level5State = {
     },
 
     checkPosition: function() {
-        if(this.block1.position.x === 340 && this.block1.position.y === 300 &&
-            this.block2.position.x === 340 && this.block2.position.y === 260 &&
-            this.block3.position.x === 300 && this.block3.position.y === 300 &&
-            this.block4.position.x === 300 && this.block4.position.y === 220 &&
-            this.block5.position.x === 300 && this.block5.position.y === 380 &&
-            this.block6.position.x === 420 && this.block6.position.y === 220 &&
-            this.block7.position.x === 420 && this.block7.position.y === 340 &&
-            this.block8.position.x === 500 && this.block8.position.y === 260) {
+        if(this.block1.position.x === 320 && this.block1.position.y === 280 &&
+            this.block2.position.x === 320 && this.block2.position.y === 240 &&
+            this.block3.position.x === 280 && this.block3.position.y === 280 &&
+            this.block4.position.x === 280 && this.block4.position.y === 200 &&
+            this.block5.position.x === 280 && this.block5.position.y === 360 &&
+            this.block6.position.x === 400 && this.block6.position.y === 200 &&
+            this.block7.position.x === 400 && this.block7.position.y === 320 &&
+            this.block8.position.x === 480 && this.block8.position.y === 240) {
             mechanics.showEndgameInterface();
         }
     },

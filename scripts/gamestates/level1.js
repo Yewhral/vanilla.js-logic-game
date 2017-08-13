@@ -14,7 +14,7 @@ let level1State = {
         mechanics.createText('Level 1 - Rocket science ', 30, 5, 0, 100);
 
         //creating items
-        const levelOne = game.add.sprite(300, 220, 'levelOne');
+        const levelOne = game.add.sprite(320, 240, 'levelOne');
 
         const block1 = game.add.sprite(mechanics.randomizeInitial(500,600), mechanics.randomizeInitial(150,250), 'block4');
         mechanics.snapToGrid(block1);
@@ -33,10 +33,10 @@ let level1State = {
     },
 
     checkPosition: function() {
-        if(this.block1.position.x === 380 && this.block1.position.y === 340 &&
-            this.block2.position.x === 380 && this.block2.position.y === 220 &&
-            this.block3.position.x === 340 && this.block3.position.y === 260 &&
-            this.block4.position.x === 300 && this.block4.position.y === 340) {
+        if(this.block1.position.x === 400 && this.block1.position.y === 360 &&
+            this.block2.position.x === 400 && this.block2.position.y === 240 &&
+            this.block3.position.x === 360 && this.block3.position.y === 280 &&
+            this.block4.position.x === 320 && this.block4.position.y === 360) {
             mechanics.showEndgameInterface();
         }
     }

@@ -8,9 +8,9 @@ let menuState = {
         background.width = this.game.width;
 
 
-        let startButton = game.add.button(320,260,'mainMenuButton',this.gameStart,this,1,2,0);
-        let creditsButton = game.add.button(320,340,'mainMenuButton',this.showCredits,this,1,2,0);
-        let scoresButton = game.add.button(320,420,'mainMenuButton',this.showScoreboard,this,1,2,0);
+        let startButton = game.add.button(330,260,'mainMenuButton',this.gameStart,this,1,2,0);
+        let creditsButton = game.add.button(330,340,'mainMenuButton',this.showCredits,this,1,2,0);
+        let scoresButton = game.add.button(330,420,'mainMenuButton',this.showScoreboard,this,1,2,0);
 
         startButton.width = 160;
         startButton.height = 50;

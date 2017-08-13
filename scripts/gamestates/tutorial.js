@@ -11,7 +11,7 @@ let level0State = {
         mechanics.createInterface();
 
         //creating items
-        const tutorial = game.add.sprite(340, 220, 'tutorial');
+        const tutorial = game.add.sprite(360, 200, 'tutorial');
 
         const block1 = game.add.sprite(mechanics.randomizeInitial(500,700), mechanics.randomizeInitial(200,300), 'block1');
         mechanics.snapToGrid(block1);
@@ -31,9 +31,9 @@ let level0State = {
     },
 
     checkPosition: function() {
-        if(this.block1.position.x === 340 && this.block1.position.y === 220 &&
-           this.block2.position.x === 380 && this.block2.position.y === 220 &&
-           this.block3.position.x === 380 && this.block3.position.y === 260) {
+        if(this.block1.position.x === 360 && this.block1.position.y === 200 &&
+           this.block2.position.x === 400 && this.block2.position.y === 200 &&
+           this.block3.position.x === 400 && this.block3.position.y === 240) {
            level0State.displayScoreboard();
         }
     },
