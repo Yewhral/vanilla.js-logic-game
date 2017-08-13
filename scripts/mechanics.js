@@ -70,7 +70,7 @@ let mechanics = {
     },
 
     snapToGrid: function(element){
-        const bounds = new Phaser.Rectangle(0, 0, 820, 600);
+        const bounds = new Phaser.Rectangle(0, 70, 816, 600);
         element.inputEnabled = true;
         element.input.enableDrag();
         element.input.enableSnap(40, 40, false, true);
