@@ -1,6 +1,7 @@
 let mechanics = {
 
     counter: 0,     // traces current level
+    timer: 0, //
 
     //game settings
     width: 800,                //game width
@@ -50,6 +51,12 @@ let mechanics = {
         mechanics.createText('Restart level', 14, 1, -200, 25);
     },
 
+    measureTime: function(){
+        let time = new Date();
+        time = time.getTime();
+        return (time-mechanics.timer)/1000;
+    },
+
     passProps: function(array){
          let object = {};
          for(let j = 0; j < array.length; j++) {
@@ -71,21 +78,26 @@ let mechanics = {
     },
 
     showEndgameInterface: function(){
+        let time = mechanics.measureTime();
         game.add.button(325,540,'mainMenuButton',mechanics.takeToTheNextLevel,this,1,2,0);
         mechanics.createText('Next level', 20, 3, 0, 550);
+        mechanics.createText(`Your time: ${time} s`, 20, 3, 300, 550);
     },
 
     takeToTheNextLevel: function(){
+        mechanics.resetTimer();
         mechanics.counter += 1;
         game.state.start(`level-${mechanics.counter}`);
     },
 
-    restartLevel: function(){
-        game.state.start(`level-${mechanics.counter}`);
+    resetTimer: function() {
+      let time = new Date();
+      mechanics.timer = time.getTime();
     },
 
-    measureTime: function(){
-
+    restartLevel: function() {
+        game.state.start(`level-${mechanics.counter}`);
+        mechanics.resetTimer();
     }
 
 };

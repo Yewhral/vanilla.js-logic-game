@@ -19,6 +19,9 @@ Day4 - Saturday 13:00 - Plan for today: finish all levels, add timer finally
 
 Update: 18:30 - more levels, credits
 
+Day5 - Sunday 9:00 - Plan for today: add scoreboard based on localStorage.
+
+
 
 // sites and resources used so far:
 

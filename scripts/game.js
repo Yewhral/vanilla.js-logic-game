@@ -9,6 +9,7 @@ game.state.add('load', loadState);
 game.state.add('mainMenu', menuState);
 game.state.add('pickLevel', levelState);
 game.state.add('credits', creditsState);
+game.state.add('scoreboard', scoreState);
 game.state.add('level-0', level0State);
 game.state.add('level-1', level1State);
 game.state.add('level-2', level2State);
